@@ -1,0 +1,29 @@
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/alefbadb
+    username: root
+    password: amir2530
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+    mail:
+      host: localhost
+      port: 1025
+      username: mahdi
+      password: mahdi
+
+      properties:
+        mail:
+          smtp:
+            ssl:
+              trust: "*"
+            auth: true
+            starttls:
+              enable: true
+            connectiontimeout: 5000
+            timeout: 3000
+            writetimeout: 5000
